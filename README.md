@@ -1,4 +1,6 @@
-deck-python
-===========
+# [Python Course Deck](http://campushash.com/workshops/python) - [CampusHash](http://campushash.com) #
 
-Python deck for our CampusHash events.
+Python course deck for CampusHash events.
+
+## Course Structure ##
+
