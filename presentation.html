@@ -1,0 +1,684 @@
+<!--
+CampusHash HTML Deck
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CampusHash Events</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/campushash_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/campushash_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide  >
+  
+    <hgroup>
+      <h2>Meet, Python!</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/python.svg"></p>
+<p><strong>World's easiest and arguably most powerful programming language.</strong></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Who uses Python?</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/whouses.png" style="width: 90%; height: 90%"></p>
+<p>and many, many more. . .</p></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Quick feature check</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>Very-high-level, <strong>interpreted</strong>, <strong>loosely</strong> and <strong>dynamically</strong> typed, object-oriented</p>
+</li>
+<li>
+<p>Clean, readable syntax</p>
+</li>
+<li>
+<p>Comfortable level of abstraction, automatic memory management</p>
+</li>
+<li>
+<p>Does <strong>not</strong> force object orientation</p>
+</li>
+<li>
+<p>Extensive collection of standard modules, great community support</p>
+</li>
+<li>
+<p>Can be, and is, used for a large number of application types</p>
+</li>
+<li>
+<p>Easily extensible, plays nice with applications written in other programming languages</p>
+</li>
+<li>
+<p>Easy to learn, get started, and build things, has <strong>common sense</strong></p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/python.png" style="width: 100%; height: 100%">
+<footer class="source">source: xkcd.com</footer></p>
+<p>This is a title with the event branding.</p></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Common Sense?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="c++">
+#include &lt;iostream&gt;
+using namespace std; 
+int main()
+{
+cout << "Hello, world!" << std::endl;
+    return 0;
+}
+</pre>
+
+<pre class="prettyprint" data-lang="java">
+public class HelloWorld {
+    public static void main(String [] args) {
+        System.out.println("Hello, world!");
+        }
+}
+</pre>
+
+<div class="centered">How about, <strong>NO</strong>.</div></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Common Sense!</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+print "Hello, World!"
+</pre>
+
+<p><img src="images/troll-troll-face.svg" width=25% height=25% style="float: right"></p>
+<ul>
+<li>Clean, comprehensible syntax.</li>
+<li>No braces. Uses tab spaces as delimiters.</li>
+</ul>
+<p>Impressed already?</p></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2>Ready to hack?</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h3 style="font-size: 200%">Set up Python on your computer.<br>Fire up the interpreter.</h3>
+
+<p><span class="blue2">
+$ python
+</span>
+<br>or<br>
+<span class="blue2">
+Start &gt; Python27 &gt; IDLE
+</span></p></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Look, we have a calculator!</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Your Python shell can be used to do some real quick calculations. Don't reach out for your calculator ever again.</p>
+<pre class="prettyprint" data-lang="python">
+>>> 3 + 2
+5
+>>> 98 - 56
+42
+>>> (60 - 57) * 11
+33
+>>> (124 - 88) / 9
+4
+</pre>
+
+<p>Looks cool, huh?</p></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 400%" class="blue">Arithmetic</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Operators, numbers and variables</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+>>> 57 / 8                  # integer division by default
+7
+>>> 57.0 / 8                # coercion to float division
+7.125
+>>> PI = 3.14               # PI is a variable
+>>> r = 2.5
+>>> area = 2 * PI * r**2    # ** is used for exponentiation
+>>> area
+39.25
+>>> x = 1
+>>> y = z = 5               # multiple variable assignment
+>>> X + y * z
+Traceback (most recent call last):      # Drats! We have an error!
+  File "&lt;input&gt;", line 1, in <module>
+NameError: name 'X' is not defined      # variables are case-sensitive!
+>>> x + y * z
+26
+</pre></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Imaginary numbers too!</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Complex numbers : <span class="blue">real + imag <span class="red">j</span></span></p>
+<pre class="prettyprint" data-lang="python">
+>>> z = 4 + 2j
+>>> z
+(4+2j)              # complex number tuple
+>>> z.real          # property
+4.0
+>>> z.imag
+2.0
+>>> z.conjugate()   # method
+(4-2j)
+>>> abs(z)          # abs() is a built-in method in Python
+5
+</pre></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Some nifty functions</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+>>> x, y = 42, 6.9  # multiple inline assignments
+>>> float(x)        # converts to floating point
+42.0
+>>> int(y)          # converts to an integer
+6
+>>> round(y)        # rounds off to the nearest integral number, returns a float
+7.0
+>>> long(x)         # converts to long int
+42L
+>>> max(x, y)
+42
+>>> min(x, y, 0, -3)
+-3
+</pre></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 400%" class="green">Strings</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Let's print something!</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+>>> 'CampusHash'
+'CampusHash'
+>>> "Hello, world!"
+'Hello, world!'
+>>> "And then everyone shouted, 'We love CampusHash!'"      # nested quotes
+"And then everyone shouted, 'We love CampusHash!'"
+>>> 'I said, "Well, that\'s great."'                # escaping with \
+>>> person, emotion, thing = "Minions", "love", "banana"
+>>> person+emotion+thing
+'Minionslovebanana'
+>>> person + ' ' + emotion + ' ' + thing + '.'
+'Minions love banana.'
+>>> thing * 5
+'bananabananabananabananabanana'
+
+</pre></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Let's 'print' something!</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+>>> print 'Gru'
+Gru
+>>> movie = 'Despicable Me'
+>>> movie
+'Despicable Me'
+>>> print movie
+Despicable Me       # no quotes!
+</pre>
+
+<ul>
+<li>print is not a function. It is an operator.</li>
+<li>Anything that you operate print on, will be printed to the standard output.</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2>Anatomy of a String</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/string-slicing.png" style="height: 95%; width: 95%">
+<footer>Tip : Google for 'Monty Python's Flying Circus'.</footer></p></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Not just your regular String</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>There is no <span class="red">char</span> in Python. Only <span class="green">str</span>.</li>
+<li>Strings are immutable, i. e., they cannot be changed.</li>
+<li>Strings support splicing.</li>
+<li>Lots of in-built methods and properties to operate on strings.</li>
+</ul>
+<pre class="prettyprint" data-lang="python">
+>>> name = "Minion"
+>>> name[3]
+'i'
+>>> name[3] = 'x'
+Traceback (most recent call last):
+  File "&lt;input&gt;", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> name[::-1]      # This one's magic!
+'noiniM'</article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 400%" class="blue">Data Structures: <span class="red">Lists</span></h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/lists.png" style="height: 50%; width: 50%"></p>
+<h1 style="font-size: 200%">List is a compund datatype.</h1>
+
+<p>It is analogous to an array.</p></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Lists - Feature Check</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Lists are collections of items (strings, integers, or even other lists).</li>
+<li>Each item in the list has an assigned index value.</li>
+<li>Lists are enclosed in [ ].</li>
+<li>Each item in a list is separated by a comma.</li>
+<li>Unlike strings, lists are mutable, which means they can be changed.</li>
+</ul>
+<pre class="prettyprint" data-lang="python">
+>>> fruits = ['apple', 'banana', 'orange']
+>>> fruits[0]
+'apple'
+>>> mix = ["1", "hello", 2, "world"]
+>>> mix[-1]
+'world'
+</pre></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="blue">Data Structures: <span class="red">Dictionaries</span></h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/dictionary.gif" style="height: 100%; width: 100%"></p>
+<h1 style="font-size: 200%">Dictionaries are hash tables.</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Dictionaries - Feature Check</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>Dictionaries are collections of items that have a "key" and a "value".</p>
+</li>
+<li>
+<p>Python dictionaries are also known as associative arrays or hash tables.</p>
+</li>
+<li>
+<p>They are just like lists, except instead of having an assigned index number,
+you make up the index.</p>
+</li>
+<li>
+<p>Dictionaries are unordered, so the order that the keys are added doesn’t
+necessarily reflect what order they may be reported back.</p>
+</li>
+<li>
+<p>Use {} curly brackets to construct the dictionary.</p>
+</li>
+<li>
+<p>Look up the value associated with a key using [].</p>
+</li>
+<li>
+<p>Provide a key and a value.</p>
+</li>
+<li>
+<p>A colon is placed between key and value (key:value). </p>
+</li>
+<li>
+<p>Each key must be unique and each key can be in the dictionary only once.</p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="green2">Tuples and Sets</h1></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="yellow2">Functions</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/phonecall.jpg" style="height: 100%; width: 100%"></p>
+<h1 style="font-size: 140%">A function is something you can call which performs an action and returns a value.</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2>Function rules</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>A function in Python must be defined before it’s used.</p>
+</li>
+<li>
+<p>Create a function by using the keyword “def” followed by the functions name and
+the parentheses (). </p>
+</li>
+<li>
+<p>The function has to be named plus specify what parameter it has (if any).</p>
+</li>
+<li>
+<p>The keyword "def" is required and must be in lowercase.</p>
+</li>
+<li>
+<p>The name can be anything you like. </p>
+</li>
+<li>
+<p>The end of the line has to end with a colon (:)</p>
+</li>
+<li>
+<p>The function often ends by returning a value using return.</p>
+</li>
+<li>
+<p>The code inside the function must be indented.</p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="gray3">Loops</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/pypy.png" style="height: 100%; width: 100%"></p>
+<h1 style="font-size: 140%">Loops allow us to do similar things many times.</h1></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 250%" class="blue2">Conditions and Comparisons</h1></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="red2">In-built Functions</h1></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="black">Classes</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/class.png" style="height: 100%; width: 100%"></p>
+<h1 style="font-size: 140%">Classes are definitions for objects.</h1></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="red">Object-orientation</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/diamond.png" style="height: 75%; width: 75%"></p>
+<h1 style="font-size: 140%">Everything is an object in Python.</h1></article>
+ 
+</slide>
+
+<slide class="nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><h1 style="font-size: 300%" class="black">Modules and Packages</h1></article>
+ 
+</slide>
+
+<slide class="fill" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter centered"><p><img src="images/questions.jpg" style="height: 100%; width: 100%"></p>
+<h1 style="font-size: 400%">I <span class="red">&hearts;</span> questions!</h1></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/campushash_icon_128.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>That's all, folks!</h2>
+    <p>You have been a great audience!</p>
+  </article>
+  <p class="auto-fadein">
+    Shoot your questions at <strong style="color: #192959;">forum.campushash.com</strong>.
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/campushash_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
